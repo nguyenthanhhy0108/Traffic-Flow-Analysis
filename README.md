@@ -14,27 +14,48 @@ This project focuses on counting the number of people participating in traffic w
     git clone https://github.com/nguyenthanhhy0108/Traffic-Flow-Analysis.git
     ```
 
-## Usage
+3. **Run the Application**: Navigate to the cloned directory, create two new folders and run the application using Python:
 
-1. Place the video to be analyzed in the `videos` directory.
-2. Run the `detect_people.py` script to detect and track humans from the video: `python detect_people.py --video_path videos/video_name.mp4`
-3. Run the `preprocess_images.py` script to preprocess the images of the detected individuals: `python preprocess_images.py`
-4. Run the `train_model.py` script to train the CNN model: `python train_model.py`
-5. Run the `classify_people.py` script to classify whether each person is wearing a helmet or not: `python classify_people.py`
-6. The final results will be saved in the `output` directory.
+    ```
+    cd Traffic-Flow_Analysis
+    ```
+    ```
+    mkdir output_video
+    ```
+    ```
+    mkdir output_images
+    ```
+    ```
+    ./run.sh
+    ```
+    
+    * An web app will appear, you can choose a video and wait for the result.
+
+    * All of ouput images (person image) will be placed in output_images folder.
+
+    * An output video which is tracked person will be placed in output_video folder.
+
+    **For an perfect experience in the next run: **You should remove `output_video` and `output_images` folder by:
+
+    ```
+    rm -rf output_video/*
+    ```
+
+    ```
+    rm -rf output_images/*
+    ```
 
 ## Resources
 
-- [YOLOv9](https://github.com/ultralytics/yolov5)
-- [Object Detection and Tracking Project](https://github.com/ultralytics/yolov5)
+- [YOLOv9](https://github.com/WongKinYiu/yolov9)
 - [TensorFlow](https://www.tensorflow.org/)
 - [OpenCV](https://opencv.org/)
 
 ## Author
 
-John Doe
+Nguyen Thanh hy
 
 ## License
 
-This project is distributed under the [MIT License](https://opensource.org/licenses/MIT).
+The application is released under the MIT License. See the [LICENSE](LICENSE) file for details.
 
