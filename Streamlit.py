@@ -34,13 +34,15 @@ def main():
                 number_of_violator = response.json()["number_of_violator"]
                 total_people = response.json()["total_people"]
 
+                colors = ['#ff7f0e', '#1f77b4']
+
                 data = pd.DataFrame({
                     'Category': ['Số người vi phạm', 'Tổng số ngời'],
                     'Value': [number_of_violator, total_people]
                 })
 
                 fig, ax = plt.subplots()
-                ax.barh(data['Category'], data['Value'])
+                ax.barh(data['Category'], data['Value'], color=colors)
 
                 st.pyplot(fig)
 
