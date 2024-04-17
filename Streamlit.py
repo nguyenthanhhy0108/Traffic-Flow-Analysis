@@ -24,7 +24,7 @@ def main():
             spinner_markdown = st.markdown('<div class="custom-spinner-overlay"><div class="custom-spinner"></div></div>',
                                             unsafe_allow_html=True)
 
-            response = requests.post("http://localhost:8080/process_video", files={"video": uploaded_file})
+            response = requests.post("http://localhost:5000/process_video", files={"video": uploaded_file})
             if response.status_code == 200:
                 spinner_markdown.empty()
                 st.success(response.json()["result"])
@@ -37,7 +37,7 @@ def main():
                 colors = ['#ff7f0e', '#1f77b4']
 
                 data = pd.DataFrame({
-                    'Category': ['Số người vi phạm', 'Tổng số ngời'],
+                    'Category': ['Số người vi phạm', 'Tổng số người'],
                     'Value': [number_of_violator, total_people]
                 })
 
