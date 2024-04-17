@@ -59,10 +59,29 @@ This project focuses on counting the number of people participating in traffic w
 
 This is my project architecture:
 
-![Architecture](D:\Computer_Vision_(CS231)\Analysis_traffic\traffic_flow_analysis_with_yolov9\readme_imgs\Yolov9.jpg)
+![Architecture](readme_imgs\Yolov9.jpg)
 
+## Example Results
 
-## Resources
+There are some example result:
+
+* Barchart plot
+
+![Result1](readme_imgs\barchart.jpg)
+
+* Piechart plot
+  
+![Result2](readme_imgs\pie.jpg)
+
+* Some Violator
+
+![Result3](readme_imgs\anh1.jpg)
+
+![Result4](readme_imgs\anh2.jpg)
+
+## Copyright
+
+Showed results are extracted from [Youtube](https://www.youtube.com/watch?v=gWMDiKPI3Gg&t=39s)
 
 - [YOLOv9](https://github.com/WongKinYiu/yolov9)
 - [TensorFlow](https://www.tensorflow.org/)
