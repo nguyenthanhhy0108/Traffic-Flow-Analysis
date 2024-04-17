@@ -25,7 +25,6 @@ class classify_model:
 
         result_dict = {}
 
-        # Sử dụng tqdm để hiển thị thanh quá trình
         for path in tqdm(root, desc="Predicting"):
             img_path = os.path.join(images_folder_path, path)
 

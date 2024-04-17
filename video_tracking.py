@@ -99,11 +99,11 @@ class video_tracking:
                     cv2.putText(frame, label, (x1 + 5, y1 - 8), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
 
             self.out.write(frame)
-            resized_frame = cv2.resize(frame, (1040, 720))
-            cv2.imshow("out", resized_frame)
+            # resized_frame = cv2.resize(frame, (1040, 720))
+            # cv2.imshow("out", resized_frame)
 
-            if cv2.waitKey(1) == ord("q"):
-                break
+            # if cv2.waitKey(1) == ord("q"):
+            #     break
             frame_count += 1
             print("Processing frame "+ f"{frame_count}")
 

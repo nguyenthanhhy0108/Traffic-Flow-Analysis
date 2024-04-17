@@ -27,9 +27,9 @@ output_images_folder = "D:\\Computer_Vision_(CS231)\\Analysis_traffic\\yolov9\\o
 
 # ---------Result is imgs_after_preprocess
 
-classify_model = classify_model()
+c_model = classify_model()
 
-result_dict = classify_model.predict_all(images_folder_path=output_images_folder)
+result_dict = c_model.predict_all(images_folder_path=output_images_folder)
 
 for key, val in result_dict.items():
     if val < 0.5:
