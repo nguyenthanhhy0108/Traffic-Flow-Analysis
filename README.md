@@ -23,7 +23,7 @@ This project focuses on counting the number of people participating in traffic w
 
     You need to install all of nescessary libraries by:
     ```
-    pip install -r requirements.txt`
+    pip install -r requirements.txt
     ```
 
     Create two compulsory folders by:
