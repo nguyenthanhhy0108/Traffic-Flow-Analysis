@@ -79,6 +79,12 @@ There are some example result:
 
 ![Result4](readme_imgs\anh2.jpg)
 
+## More Information
+
+Do you want to find more information about my project ?
+
+Please read `description.pdf` on my project !
+
 ## Copyright
 
 Showed results are extracted from [Youtube](https://www.youtube.com/watch?v=gWMDiKPI3Gg&t=39s)
