@@ -99,5 +99,5 @@ Nguyen Thanh hy
 
 ## License
 
-The application is released under the MIT License. See the [LICENSE](LICENSE) file for details.
+The application is released under the GPL-3.0 License. See the [LICENSE](LICENSE) file for details.
 
