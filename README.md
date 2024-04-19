@@ -95,7 +95,7 @@ Showed results are extracted from [Youtube](https://www.youtube.com/watch?v=gWMD
 
 ## Author
 
-Nguyen Thanh hy
+Nguyen Thanh Hy
 
 ## License
 
