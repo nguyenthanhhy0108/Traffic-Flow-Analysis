@@ -59,7 +59,7 @@ This project focuses on counting the number of people participating in traffic w
 
 This is my project architecture:
 
-![Architecture](https://drive.google.com/file/d/116wnqLFlcuuRcZjZOvtqsvdhkcJ52MZz/view?usp=drive_link)
+![Architecture](https://raw.githubusercontent.com/nguyenthanhhy0108/Traffic-Flow-Analysis/main/readme_imgs/Yolov9.jpg)
 
 ## Example Results
 
