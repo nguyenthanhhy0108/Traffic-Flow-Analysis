@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from preprocess_data import *
 from video_tracking import *
 from classify_model import *
+from helmet_classify_model import *
 import os
 
 app = Flask(__name__)
@@ -32,6 +33,7 @@ def process_video():
     pre_precessor.remove_duplicate_images(output_images_folder)
 
     c_model = classify_model()
+    h_model = classify_helmet_model()
 
     violator = []
     total_people = len(os.listdir(output_images_folder))
@@ -40,8 +42,11 @@ def process_video():
 
     for key, val in result_dict.items():
         if val < 0.5:
-            print(key)
             violator.append(key)
+        else:
+            if h_model.predict(os.path.join(output_images_folder, key)) < 0.5:
+                violator.append(key)
+                print(key)
 
     rate = len(violator) / total_people
 
